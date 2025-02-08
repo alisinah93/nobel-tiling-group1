@@ -5,60 +5,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nobel Tiling Group</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Navbar -->
   <header>
-    <div class="hero">
-      <img src="hero-image.jpg" alt="Tiling Work" class="hero-image">
-      <div class="hero-text">
-        <h1>Welcome to Nobel Tiling Group</h1>
-        <p>Your Trusted Tiling Experts</p>
-        <a href="#contact" class="cta-button">Request a Quote</a>
-      </div>
-    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Transforming Spaces with Expert Tiling</h1>
+      <p>Your trusted tiling specialists in Brisbane.</p>
+      <a href="#contact" class="cta-button">Get a Free Quote</a>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>At Nobel Tiling Group, we offer top-quality tiling services for both residential and commercial properties. Our team of skilled professionals takes pride in delivering flawless installations and excellent customer service. With years of experience, we are dedicated to making your spaces look beautiful and functional.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
   <section id="services">
-    <h2>Our Services</h2>
-    <div class="services-container">
+    <div class="container">
+      <h2>Our Services</h2>
       <div class="service">
+        <img src="service-bathroom.jpg" alt="Bathroom Tiling">
         <h3>Bathroom Tiling</h3>
-        <p>Transform your bathroom with beautiful, durable tiles.</p>
+        <p>From floor to wall, we create stunning and durable bathroom tile designs.</p>
       </div>
       <div class="service">
+        <img src="service-floor.jpg" alt="Floor Tiling">
         <h3>Floor Tiling</h3>
-        <p>High-quality floor tiles for every room in your home or office.</p>
+        <p>High-quality floor tiles that enhance the beauty of your space while being practical and long-lasting.</p>
       </div>
       <div class="service">
+        <img src="service-custom.jpg" alt="Custom Tiling">
         <h3>Custom Tiling</h3>
-        <p>Get the perfect design to match your vision and space.</p>
+        <p>Get custom tiling solutions tailored to your preferences and needs.</p>
       </div>
     </div>
   </section>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>At Nobel Tiling Group, we specialize in providing top-notch tiling services for residential and commercial clients in Brisbane. We take pride in our high-quality craftsmanship and attention to detail.</p>
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <div class="container">
+      <h2>Our Work</h2>
+      <div class="gallery-grid">
+        <img src="gallery1.jpg" alt="Tiling Project 1">
+        <img src="gallery2.jpg" alt="Tiling Project 2">
+        <img src="gallery3.jpg" alt="Tiling Project 3">
+        <img src="gallery4.jpg" alt="Tiling Project 4">
+      </div>
+    </div>
   </section>
 
+  <!-- Contact Form Section -->
   <section id="contact">
-    <h2>Contact Us</h2>
-    <form action="#" method="post">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="cta-button">Send Message</button>
+      </form>
+    </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Nobel Tiling Group</p>
+    <p>&copy; 2025 Nobel Tiling Group | All Rights Reserved</p>
     <div class="social-media">
       <a href="#">Facebook</a> | <a href="#">Instagram</a>
     </div>
   </footer>
+
 </body>
 </html>
